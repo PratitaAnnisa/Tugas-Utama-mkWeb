@@ -60,5 +60,6 @@
     <?php endif; ?>
 
     <?php mysqli_close($conn); ?>
+    <p><a href="index.php"> << Kembali Ke daftar kategori</a></p>
 </body>
 </html>
