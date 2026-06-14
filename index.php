@@ -18,7 +18,7 @@ $result = mysqli_query($conn, $query);
     <h2>Daftar Kategori</h2>
 
     <?php if(mysqli_num_rows($result) > 0): ?>
-        <table>
+        <table border="1" cellpadding="8" cellspacing="0">
             <thead>
                 <tr>
                     <th>No</th>
@@ -31,7 +31,7 @@ $result = mysqli_query($conn, $query);
                     <tr>
                         <td><?= $no++ ?></td>
                         <td>
-                            <a href="produk.php?categoryid=<?= $row['CatagoryID'] ?>">
+                            <a href="produk.php?categoryid=<?= $row['CategoryID'] ?>">
                                 <?= htmlspecialchars($row['CategoryName']) ?>
                             </a>
                         </td>

@@ -33,7 +33,7 @@
     <h1>Berikut Daftar Produk <?= htmlspecialchars($category['CategoryName']) ?></h1>
 
     <?php if (mysqli_num_rows($r_prod) > 0): ?>
-        <table>
+        <table border="1" cellpadding="8" cellspacing="0">
             <thead>
                 <tr>
                     <th>ProductID</th>
